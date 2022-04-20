@@ -23,10 +23,19 @@ Mensagem de retorno de sucesso na instalação da biblioteca.
 Do lado esquerdo no notebook tem uma parte que da para navegar nos arquivos. Nesse local que monta o seu drive no notebook.
 O processo e simples e rápido
 
+### Listando opções de resoluções e formato disponivel
+
+```bash
+!pytube --list "URL do video"
+ 
+```
+
 ### Fazendo Download do Vídeo
 usei Essa linha para realizar o download do video em HD com boa qualidade. Primeira parte do scrits é levando o caminho do shell para o drive, a segunda parte é fazendo o download do video no formato mp4.
 ```bash
-!cd /content/drive/MyDrive/Cursos; pytube URL do video --itag=22
+!pytube --list "URL do video"
+
+!cd /content/drive/MyDrive/Cursos; pytube --itag=22 "URL do video" (sem aspa)  
 ```
 ### Finalizando 
 Você pode depois baixa o video do drive sem problema, ou se tiver configurado a sicronia do drive em um dispotivo o arquivo em poucos minutos estará nesse dispositivo.
